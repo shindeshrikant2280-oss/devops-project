@@ -17,11 +17,11 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-           username: ${{ secrets.DOCKERHUB_USERNAME }}
-           password: ${{ secrets.DOCKERHUB_TOKEN }}
+         username: ${{ secrets.DOCKERHUB_USERNAME }}
+         password: ${{ secrets.DOCKERHUB_TOKEN }}
        
-         - name: Build Docker image
-           run: docker build -t shreexn/my-nginx:latest .
+      - name: Build Docker image
+        run: docker build -t shreexn/my-nginx:latest .
            
-         - name: Push Docker image
-           run: docker push shreexn/my-nginx:latest  
+      - name: Push Docker image
+        run: docker push shreexn/my-nginx:latest  
