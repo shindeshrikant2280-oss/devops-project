@@ -1,7 +1,8 @@
  </>  YAML
+
  name: Docker CI
 
- on:
+ "on":
    push:
        branches:
          - main
