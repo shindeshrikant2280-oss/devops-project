@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+      uses: actions/checkout@v4
       
       - name: test HTML
-        run: |
+       run: |
           grep -q "My First DevOps Deployment" index.html
           grep -q "Docker Github CI/CD Cloud" index.html
           echo "HTML test passed"
