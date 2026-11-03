@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Automated Tests
         run: |
-          export PYTHON=$PWD
+          export PYTHONPATH=$PWD
           pytest -v
 
       - name: Build Docker Image
